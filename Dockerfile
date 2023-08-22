@@ -5,7 +5,7 @@ FROM jupyter/base-notebook
 LABEL maintainer="Your Name <your.email@example.com>"
 
 # Copy your notebook files into the container's working directory
-COPY ./notebooks /home/jovyan/notebooks
+COPY ./notebooks /home/jovyan/work
 
 # Expose the Jupyter Notebook port
 EXPOSE 8888
