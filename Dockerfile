@@ -7,6 +7,8 @@ LABEL maintainer="Your Name <your.email@example.com>"
 # Copy your notebook files into the container's working directory
 COPY ./notebooks /home/jovyan/work
 
+ENV PYDEVD_DISABLE_FILE_VALIDATION 1
+
 # Expose the Jupyter Notebook port
 EXPOSE 8888
 
